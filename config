@@ -170,6 +170,6 @@ smart_gaps on
 # finds out, if available)
 bar {
         status_command i3status -c /home/imaginos/.config/i3/i3status.conf
-        status_command i3blocks -c /home/imaginos/.config/i3/i3blocks.conf
+        #status_command i3blocks -c /home/imaginos/.config/i3/i3blocks.conf
         position top
 }
