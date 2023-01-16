@@ -2,7 +2,7 @@ set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:monospace 10
+font pango:monospace 11
 
 for_window [class="^.*"] border pixel 2 
 gaps inner 12
@@ -162,12 +162,14 @@ bindsym Mod4+p exec --no-startup-id i3lock
 bindsym Mod4+b exec --no-startup-id qutebrowser
 bindsym Mod1+f exec --no-startup-id alacritty -e ranger
 exec_always --no-startup-id feh --bg-fill /home/imaginos/Pictures/wallhaven-x6567z.jpg
+#exec_always --no-startup-id i3status -c ./i3status.conf
 bindsym $mod+Shift+q exec --no-startup-id shutdown
 smart_gaps on
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        status_command i3status
+        status_command i3status -c /home/imaginos/.config/i3/i3status.conf
+        status_command i3blocks -c /home/imaginos/.config/i3/i3blocks.conf
         position top
 }
