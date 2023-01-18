@@ -96,16 +96,16 @@ bindsym $mod+q focus parent
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "workspace 1"
-set $ws2 "workspace 2"
-set $ws3 "workspace 3"
-set $ws4 "workspace 4"
-set $ws5 "workspace 5"
-set $ws6 "workspace 6"
-set $ws7 "workspace 7"
-set $ws8 "workspace 8"
-set $ws9 "workspace 9"
-set $ws10 "workspace 10"
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+set $ws7 "7"
+set $ws8 "8"
+set $ws9 "9"
+set $ws10 "10"
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
@@ -163,7 +163,7 @@ bindsym Mod4+b exec --no-startup-id qutebrowser
 bindsym Mod1+f exec --no-startup-id alacritty -e ranger
 exec_always --no-startup-id feh --bg-fill /home/imaginos/Pictures/wallhaven-x6567z.jpg
 exec --no-startup-id polybar -c /home/imaginos/.config/i3/config.ini
-bindsym $mod+Shift+q exec --no-startup-id shutdown
+bindsym $mod+Shift+q exec --no-startup-id poweroff
 smart_gaps on
 
 # Start i3bar to display a workspace bar (plus the system information i3status
